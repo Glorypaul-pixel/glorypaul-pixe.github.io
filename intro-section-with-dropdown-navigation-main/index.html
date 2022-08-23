@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <header> 
+    <div class="logo">
+      snap
+    </div>
+    <nav class="links">
+      <div class="menu">
+        <ul>
+          <li class="active icon"> <a href="#"> Features</a> <img src="./images/icon-arrow-up.svg" alt="">
+
+            <!-- <i class="icon-arrow-up.svg" onclick="showMenu()"></i>  -->
+            <div class="sub-menu">
+              <ul> 
+                <li><img src="./images/icon-todo.svg" alt=""> Todo List</li>
+                <li><img src="./images/icon-calendar.svg" alt=""> Calender</li>
+                <li><img src="./images/icon-reminders.svg" alt="">Reminders</li>
+                <li><img src="./images/icon-planning.svg" alt=""> Planing</li>
+              </ul>
+            </div>
+            <!-- <img src="./images/icon-arrow-down.svg" alt=""> -->
+          </li>
+         
+          <li class="passive icon"><a href="#">Company</a>
+            <img src="./images/icon-arrow-up.svg" alt=""> 
+            <div class="sub-menu-1">
+              <ul>
+                <li> History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+            <!-- <img src="./images/icon-arrow-down.svg" alt=""> -->
+        </li>
+
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="buttn">
+        <button type="submit"><a href="#">Login</a></button>
+        <button type ="submit"><a href="#">Register</a></button>
+      </div>
+     </nav>
+     <i class="fa fa-bars open-menu" onclick="showMenu()"></i>
+     <i class="fa fa-times close-menu" onclick="hideMenu()"></i>
+    <div class="content">
+    <div class="colour">
+      <div class="item">
+        <div class="active icon"> 
+          <a href="#"> Features</a> 
+          <img src="./images/icon-arrow-down.svg" alt="">
+        </div>  
+        <div class="sub-menu">
+          
+            <a href="#"><img src="./images/icon-todo.svg" alt=""> Todo List</a>
+            <a href="#"><img src="./images/icon-calendar.svg" alt=""> Calender </a>
+            <a href="#"><img src="./images/icon-reminders.svg" alt="">Reminders</a>
+            <a href="#"><img src="./images/icon-planning.svg" alt=""> Planing</a>
+          </ul>
+        </div> 
+    </div>  
+    <div class="item1">
+        <div class="passive icon">
+          <a href="#">Company</a>
+          <img src="./images/icon-arrow-up.svg" alt="">
+        </div>  
+          <div class="sub-menu-1">
+              <a href="#">History</a>   
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+          </div>
+          <!-- <img src="./images/icon-arrow-down.svg" alt=""> -->
+    </div>
+    <div>
+      <a href="#">Careers</a>
+    </div>
+    <div>
+      <a href="#">About</a>
+    </div>
+    <div class="buttn1">
+      <button type="submit"><a href="#">Login</a></button>
+      <button type ="submit"><a href="#">Register</a></button>
+    </div>
+    </div>
+    </div>
+    
+  </header>
+  <div class="main-container">
+    <div class="photo">
+
+    </div>
+    <div class="container">
+      <h1> Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <div class="more">
+        <button type="button"><a href="#">Learn more</a></button>
+      </div>
+      <div  class="images">
+        <div>
+          <img src="./images/client-databiz.svg" alt="">
+        </div>
+        <div>
+          <img src="./images/client-audiophile.svg" alt="">
+        </div>
+        <div>
+          <img src="./images/client-meet.svg" alt="">
+        </div>
+        <div>
+          <img src="./images/client-maker.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="bg-image">
+      <img src="./images/image-hero-desktop.png" alt="">
+    </div>
+  </div>  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/Techk_e4ma">Techk_e4ma</a>.
+  </div>
+  <script>
+
+    let menu = document.querySelector(".content");
+    function showMenu(){
+        // header.style.right="0";
+        menu.style.opacity="1"
+        document.querySelector(".open-menu").style.display="none" 
+        document.querySelector(".close-menu").style.display="block" 
+    }    
+
+    function hideMenu(){
+        menu.style.opacity="0"
+        document.querySelector(".open-menu").style.display="block" 
+        document.querySelector(".close-menu").style.display="none" 
+
+    }   
+    // var fullphotobox = document.getElementById("fullphotobox");
+    // function showMenu(){
+    //     fullphotobox.style.right ="0";
+    // }
+    // function hideMenu(){
+    //     fullphotobox.style.right ="375px";
+    // }
+</script>
+</body>
+</html>
